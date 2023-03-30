@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/akshayp7/playwright-typescipt-playwright-test.git"
+    "url": "https://github.com/trivial-search/playwright-typescript-playwright-test"
   },
   "author": "Akshay Pai",
   "license": "MIT",

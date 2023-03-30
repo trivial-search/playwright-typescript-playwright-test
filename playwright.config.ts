@@ -63,7 +63,7 @@ const config: PlaywrightTestConfig = {
       use: {
         browserName: `chromium`,
         baseURL: testConfig[process.env.ENV],
-        headless: true,
+        headless: false,
         viewport: { width: 1500, height: 730 },
         ignoreHTTPSErrors: true,
         acceptDownloads: true,
@@ -136,7 +136,7 @@ const config: PlaywrightTestConfig = {
         browserName: `chromium`,
         channel: `chrome`,
         baseURL: testConfig[process.env.ENV],
-        headless: true,
+        headless: false,
         ignoreHTTPSErrors: true,
         acceptDownloads: true,
         screenshot: `only-on-failure`,
