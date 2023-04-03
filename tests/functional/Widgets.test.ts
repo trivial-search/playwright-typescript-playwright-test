@@ -1,7 +1,7 @@
 import test from '@lib/BaseTest';
 
 test(`@Smoke Verify Widgets Page`, async ({ loginPage, widgetsPage, webActions }) => {
-    await loginPage.navigateToURL();
+    await webActions.navigateToURL('https://demoqa.com/');
     await webActions.clickByText('Widgets'); // Click on Widgets Icon identified via text selector
     await webActions.clickByText('Auto Complete');
     await widgetsPage.enterAutocompleteEditbox('Bl');

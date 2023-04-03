@@ -14,6 +14,10 @@ export class WebActions {
         this.context = context;
     }
 
+    async navigateToURL(url: string): Promise<void> {
+        await this.page.goto(url);
+    }
+    
     async decipherPassword(): Promise<string> {
         const key = `SECRET`;
         //ENCRYPT

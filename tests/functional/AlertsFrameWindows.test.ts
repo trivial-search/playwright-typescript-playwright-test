@@ -1,7 +1,7 @@
 import test from '@lib/BaseTest';
 
 test(`@Smoke Verify Alerts, Frame & Windows Page`, async ({ loginPage, alertsFrameWindowsPage, webActions }) => {
-    await loginPage.navigateToURL();
+    await webActions.navigateToURL('https://demoqa.com/');
     await webActions.clickByText('Alerts, Frame & Windows'); // Click on Alerts, Frame & Windows icon
     await webActions.clickByText('Browser Windows'); // Click on Browser Windows navigation side bar
     await alertsFrameWindowsPage.verifyNewTab(`https://demoqa.com/sample`);

@@ -4,6 +4,7 @@ import { testConfig } from '../../testConfig';
 
 let webActions: WebActions;
 
+
 export class LoginPage {
     readonly page: Page;
     readonly context: BrowserContext;
@@ -20,10 +21,6 @@ export class LoginPage {
         this.PASSWORD_EDITBOX = page.locator('#password');
         this.LOGIN_BUTTON = page.locator('#login');
         this.BOOKS_SEARCH_BOX = page.getByPlaceholder('Type to search');
-    }
-
-    async navigateToURL(): Promise<void> {
-        await this.page.goto("/");
     }
 
     async clickOnLoginMainButton(): Promise<void> {

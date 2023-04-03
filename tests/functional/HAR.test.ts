@@ -8,7 +8,7 @@ test(`Generate and verify HAR file for Login Page.`, async ({ page, loginPage, w
     // Once you record the har file you can uncomment the below line for Network Replay with update:false
     //The below line uses the har file from the recoded directory.
     // await page.routeFromHAR('har/personalInfo.har',{update:false});
-    await loginPage.navigateToURL();
+    await webActions.navigateToURL('https://demoqa.com/');
     await webActions.clickByText('Book Store Application');
     await loginPage.clickOnLoginMainButton();
     await loginPage.loginToApplication();
